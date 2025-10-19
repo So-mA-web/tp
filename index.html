@@ -8,11 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* PLATEAUのイメージに合わせたクリーンで技術的なトーン */
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafd; }
+        body { font-family: 'Inter', sans-serif; background-color: #f7fbf8; }
         .hero-bg {
-            /* 深みのある青から明るい青へのグラデーション */
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            background: linear-gradient(135deg, #16a085 0%, #2ecc71 100%);
         }
         .text-shadow {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -22,152 +20,143 @@
         }
         .feature-card:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 12px 25px rgba(52, 152, 219, 0.2); /* 青系の影 */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
         .btn-primary {
-            /* PLATEAUのアクセントカラーに近い鮮やかな青 */
-            background-color: #3498db;
-            box-shadow: 0 4px #2980b9;
+            background-color: #f39c12;
+            box-shadow: 0 4px #e67e22;
             transition: all 0.1s;
         }
         .btn-primary:hover {
-            background-color: #2980b9;
+            background-color: #e67e22;
         }
         .btn-primary:active {
-            box-shadow: 0 2px #2980b9;
+            box-shadow: 0 2px #e67e22;
             transform: translateY(2px);
-        }
-        .text-plateau {
-            color: #3498db; /* 統一された青 */
         }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Header / Navigation -->
-    <header class="p-4 bg-white shadow-lg sticky top-0 z-50">
+    <header class="p-4 bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">
-                <span class="inline-block transform rotate-[-10deg] mr-1 text-plateau">🔷</span>
-                <span class="text-plateau">徳島</span>ジオラマ・データ活用
+            <h1 class="text-2xl font-bold text-green-600">
+                <span class="inline-block transform rotate-[-10deg] mr-1 text-yellow-500">⚫</span>徳島ピタゴラ
             </h1>
-            <a href="#gimmicks" class="text-gray-600 hover:text-plateau transition duration-300">ギミック詳細</a>
+            <a href="#gimmicks" class="text-gray-600 hover:text-green-600 transition duration-300">ギミック紹介</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-bg py-24 md:py-40 text-white text-center">
+    <section class="hero-bg py-20 md:py-32 text-white text-center">
         <div class="max-w-4xl mx-auto px-6">
-            <p class="text-lg sm:text-xl mb-3 font-semibold text-shadow opacity-90">
-                PLATEAU 3D都市モデル データ活用プロジェクト
-            </p>
-            <h2 class="text-4xl sm:text-6xl font-extrabold mb-4 text-shadow leading-tight">
-                動的な徳島ジオラマで学ぶ、<br>デジタルツイン体験
+            <h2 class="text-4xl sm:text-6xl font-extrabold mb-4 text-shadow">
+                徳島を転がせ！
             </h2>
-            <p class="text-xl sm:text-2xl mb-10 font-light text-shadow opacity-90">
-                徳島市の名所・特産品を物理シミュレーションギミックにマッピング。
+            <p class="text-xl sm:text-2xl mb-8 font-light text-shadow opacity-90">
+                PLATEAUデータを活用！名所・特産品がピタゴラ装置に大変身！
             </p>
-            <a href="#" class="btn-primary inline-block text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg">
-                シミュレーションを開始する
+            <a href="#" class="btn-primary inline-block text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg">
+                今すぐシミュレーションを体験！
             </a>
         </div>
     </section>
 
-    <!-- Concept Section - データ活用を強調 -->
-    <section class="py-20 bg-white">
+    <!-- Concept Section -->
+    <section class="py-16 bg-white">
         <div class="max-w-5xl mx-auto px-6 text-center">
-            <span class="text-plateau text-sm font-semibold uppercase tracking-wider">PROJECT CONCEPT & TECHNOLOGY</span>
-            <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mt-2 mb-10">
-                3D都市モデルの可能性を可視化
+            <span class="text-green-600 text-sm font-semibold uppercase tracking-wider">GAME CONCEPT</span>
+            <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mt-2 mb-8">
+                学びと遊びの融合：3D物理シミュレーション
             </h3>
-            <div class="grid md:grid-cols-3 gap-10 text-left">
-                <div class="p-6 rounded-xl shadow-xl border border-gray-100 feature-card">
-                    <div class="text-4xl mb-3 text-plateau">🌐</div>
-                    <h4 class="text-xl font-semibold text-gray-800">都市データのリユース</h4>
-                    <p class="text-gray-600 mt-2">PLATEAUが提供する**徳島市の地理空間情報**を遊びを通して抽象的に体験し、データ活用の可能性を示します。</p>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg">
+                    <div class="text-4xl mb-3">🏯</div>
+                    <h4 class="text-xl font-semibold text-gray-800">名所がギミックに</h4>
+                    <p class="text-gray-600 mt-2">眉山スロープ、鳴門の渦潮スピナーなど、徳島のランドマークが玉を導く装置になります。</p>
                 </div>
-                <div class="p-6 rounded-xl shadow-xl border border-gray-100 feature-card">
-                    <div class="text-4xl mb-3 text-plateau">⚙️</div>
-                    <h4 class="text-xl font-semibold text-gray-800">高精度な物理レイヤー</h4>
-                    <p class="text-gray-600 mt-2">three.js (可視化) と cannon.js (物理演算) による**デジタルツイン技術**で、リアルな動きを再現しています。</p>
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg">
+                    <div class="text-4xl mb-3">🧪</div>
+                    <h4 class="text-xl font-semibold text-gray-800">リアルな物理演算</h4>
+                    <p class="text-gray-600 mt-2">three.jsとcannon.jsを使用し、重力、摩擦、反発を考慮した本格的な玉の動きをシミュレートします。</p>
                 </div>
-                <div class="p-6 rounded-xl shadow-xl border border-gray-100 feature-card">
-                    <div class="text-4xl mb-3 text-plateau">💡</div>
-                    <h4 class="text-xl font-semibold text-gray-800">ジオラマ教育コンテンツ</h4>
-                    <p class="text-gray-600 mt-2">データを**インタラクティブな体験**に変換。玉の動きを通じて、徳島市の魅力を視覚的に学習できます。</p>
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg">
+                    <div class="text-4xl mb-3">💡</div>
+                    <h4 class="text-xl font-semibold text-gray-800">触れて学ぶ徳島</h4>
+                    <p class="text-gray-600 mt-2">玉がギミックに触れると、その由来や豆知識が解説され、楽しく徳島市の知識が身につきます。</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gimmick Showcase Section -->
-    <section id="gimmicks" class="py-20 bg-gray-100">
+    <section id="gimmicks" class="py-16 bg-gray-50">
         <div class="max-w-6xl mx-auto px-6">
-            <span class="text-center block text-plateau text-sm font-semibold uppercase tracking-wider">SIMULATION ASSETS</span>
+            <span class="text-center block text-green-600 text-sm font-semibold uppercase tracking-wider">GIMMICKS</span>
             <h3 class="text-center text-3xl sm:text-4xl font-bold text-gray-800 mt-2 mb-12">
-                徳島3D都市モデルから着想を得たギミック群
+                ピタゴラ装置を彩る徳島ギミック
             </h3>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- 1. 眉山スロープ -->
-                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
-                    <div class="text-5xl mb-4">⛰️</div>
-                    <h4 class="text-2xl font-bold text-gray-800">眉山スロープ（地形成データ）</h4>
-                    <p class="text-gray-600 mt-2">市街地を取り囲む**地形データ**を抽象化。重力シミュレーションを体感する起点です。</p>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
+                    <div class="text-5xl mb-4">🏞️</div>
+                    <h4 class="text-2xl font-bold text-gray-800">眉山スロープ</h4>
+                    <p class="text-gray-600 mt-2">徳島市のシンボルである眉山。その長い稜線を模したスロープで、玉は重力に従い加速します。</p>
                 </div>
                 <!-- 2. 阿波おどりステージ -->
-                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
-                    <div class="text-5xl mb-4">🏢</div>
-                    <h4 class="text-2xl font-bold text-gray-800">阿波おどりステージ（ランドマーク）</h4>
-                    <p class="text-gray-600 mt-2">主要な**建物の属性情報**から着想。段差の物理的衝撃を再現します。</p>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500">
+                    <div class="text-5xl mb-4">💃</div>
+                    <h4 class="text-2xl font-bold text-gray-800">阿波おどりステージ</h4>
+                    <p class="text-gray-600 mt-2">「踊らにゃ損々」！熱狂的な阿波おどりの舞台をイメージした段差で、玉がリズミカルに弾みます。</p>
                 </div>
                 <!-- 3. 鳴門の渦潮スピナー -->
-                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-500">
-                    <div class="text-5xl mb-4">🌊</div>
-                    <h4 class="text-2xl font-bold text-gray-800">鳴門の渦潮スピナー（水域データ）</h4>
-                    <p class="text-gray-600 mt-2">**水域・海洋データ**のダイナミクスを回転運動で表現。玉の軌道に複雑性を加えます。</p>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                    <div class="text-5xl mb-4">🌀</div>
+                    <h4 class="text-2xl font-bold text-gray-800">鳴門の渦潮スピナー</h4>
+                    <p class="text-gray-600 mt-2">世界三大潮流の渦潮を再現。回転するギミックが玉の進路を大きく左右する難関です。</p>
                 </div>
                 <!-- 4. すだちバンパー -->
-                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
-                    <div class="text-5xl mb-4">🟢</div>
-                    <h4 class="text-2xl font-bold text-gray-800">すだちバンパー（特産品オブジェクト）</h4>
-                    <p class="text-gray-600 mt-2">ローカルな**特産品情報**もデータ化の対象。小規模な反発力が玉を制御します。</p>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-lime-500">
+                    <div class="text-5xl mb-4">🍋</div>
+                    <h4 class="text-2xl font-bold text-gray-800">すだちバンパー</h4>
+                    <p class="text-gray-600 mt-2">徳島の爽やかな特産品、すだち型のバンパー。玉の勢いをそっと受け止め、軌道修正します。</p>
                 </div>
                 <!-- 5. 吉野川導水路 -->
-                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-teal-500">
-                    <div class="text-5xl mb-4">💧</div>
-                    <h4 class="text-2xl font-bold text-gray-800">吉野川導水路（インフラ構造物）</h4>
-                    <p class="text-gray-600 mt-2">**都市インフラ**を模したレール。データ連携による経路最適化のコンセプトを表現。</p>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                    <div class="text-5xl mb-4">🌊</div>
+                    <h4 class="text-2xl font-bold text-gray-800">吉野川導水路</h4>
+                    <p class="text-gray-600 mt-2">四国三郎・吉野川の雄大さ。水を運ぶ水路のようなカーブレールで、玉をゴールへと導きます。</p>
                 </div>
                 <!-- 6. ゴール -->
                 <div class="feature-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500">
-                    <div class="text-5xl mb-4">✅</div>
-                    <h4 class="text-2xl font-bold text-gray-800">データ活用完了ポイント</h4>
-                    <p class="text-gray-600 mt-2">全てのギミックを通過し、シミュレーションが完了したことを示します。</p>
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h4 class="text-2xl font-bold text-gray-800">フィニッシュ！</h4>
+                    <p class="text-gray-600 mt-2">全てのギミックをクリアしたら、徳島通の証！あなたの冒険は成功です。</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 text-center bg-gray-900 text-white">
+    <section class="py-20 text-center bg-green-700 text-white">
         <div class="max-w-4xl mx-auto px-6">
             <h3 class="text-3xl sm:text-4xl font-bold mb-4">
-                新しい**都市データ体験**を始めましょう
+                さあ、徳島の魅力を体感しよう！
             </h3>
             <p class="text-xl mb-8 opacity-90">
-                このシミュレーションは、3D都市モデルデータの可能性を拡張する一歩です。今すぐ玉を転がし、動くデジタルツインを体験してください。
+                今すぐ玉をスタートさせ、物理演算によるダイナミックな動きと、各ギミックに隠された徳島の知識を楽しんでください。
             </p>
             <a href="#" class="btn-primary inline-block text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl">
-                シミュレーションを開始する
+                シミュレーションを開始
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="p-8 bg-gray-800 text-gray-400 text-center">
-        <p class="text-sm">PLATEAU活用コンセプトに基づく非公式デモンストレーション。</p>
-        <p class="text-sm">開発元：徳島ピタゴラプロジェクト | &copy; 2025</p>
+    <footer class="p-8 bg-gray-800 text-white text-center">
+        <p class="text-sm">&copy; 2025 徳島ピタゴラプロジェクト. PLATEAUデータ活用コンセプト.</p>
     </footer>
 
 </body>
